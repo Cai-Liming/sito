@@ -1,6 +1,20 @@
 * {
     box-sizing: border-box;
 }
+.row::after {
+    content : "";
+    clear: both;
+    display: block;
+}
+body{
+    background-color: lightgreen;
+    /*
+    background-image: url("benessere-e-salute-e.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    */
+}
 .header {
     background-color: #9933cc;
     color: white;
@@ -13,6 +27,24 @@
     border: 1px solid green;
 }
 
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    box-shadow: 0 1px 3px tgba(0,0,0,0.12), 0 1px 2px rgba(0, 0, 0 , 0.24);
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+
+.footer {
+    background-color: #0099cc;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+/*
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -25,7 +57,7 @@
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
-
+*/
 [class*="col-"] {
     width: 100%;
 }
