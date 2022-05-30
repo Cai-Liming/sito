@@ -55,6 +55,20 @@ body{
 [class*="col-"] {
     width: 100%;
 }
+
+@media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+    [class*="col-s-"] {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    /* For tablets: */
+    [class*="col-t-"] {
+      width: 100%;
+    }
+  }
+
 @media only screen and (min-width: 600px) {
     /* per tablet */
 .col-s-1 {width: 8.33%;}
@@ -72,19 +86,19 @@ body{
 }
 
 @media only screen and (min-width:786px) {
-.col-t-1 {width: 8.33%;}
-.col-t-2 {width: 16.66%;}
-.col-t-3 {width: 25%;}
-.col-t-4 {width: 33.33%;}
-.col-t-5 {width: 41.66%;}
-.col-t-6 {width: 50%;}
-.col-t-7 {width: 58.33%;}
-.col-t-8 {width: 66.66%;}
-.col-t-9 {width: 75%;}
-.col-t-10 {width: 83.33%;}
-.col-t-11 {width: 91.66%;}
-.col-t-12 {width: 100%;}
-}
+    .col-t-1 {width: 8.33%;}
+    .col-t-2 {width: 16.66%;}
+    .col-t-3 {width: 25%;}
+    .col-t-4 {width: 33.33%;}
+    .col-t-5 {width: 41.66%;}
+    .col-t-6 {width: 50%;}
+    .col-t-7 {width: 58.33%;}
+    .col-t-8 {width: 66.66%;}
+    .col-t-9 {width: 75%;}
+    .col-t-10 {width: 83.33%;}
+    .col-t-11 {width: 91.66%;}
+    .col-t-12 {width: 100%;}
+    }
 
 .button {
     border-radius: 4px;
@@ -92,9 +106,9 @@ body{
     border:none;
     color: #ffffff;
     text-align: center;
-    font-size: 28px;
+    font-size: 16px;
     padding: 20px;
-    width: 200px;
+    width: 150px;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
