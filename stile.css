@@ -35,70 +35,65 @@ body{
     font-size: 12px;
     padding: 15px;
 }
+.line{
+    width:75%;
+    height:8px;
+    background: #1eedf4;
+    animation:line_grow 5s infinite ease-in-out;
 
-@media only screen and (min-width : 786px){
-    /*per destop*/
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+    
+  }
+@keyframes line_grow{
+    0%{width: 0%;}
+    50%{width:100%;opacity: 1;}
+    75%{width:100%;opacity: 0;}
+
+    100%{width:0%;}
+}
+@keyframes rotate_effect{
+    0%{transform: rotate(0deg); }
+    20%{transform: rotate(0deg); }
+    40%{transform: rotate(10deg); }
+    60%{transform: rotate(-10deg); }
+    80%{transform: rotate(0deg); }
+    100%{transform: rotate(0deg); }
 }
 
-[class*="col-"] {
-    width: 100%;
-}
-
-@media only screen and (max-width: 600px) {
-    /* For mobile phones: */
-    [class*="col-s-"] {
-      width: 100%;
-    }
-  }
-  @media only screen and (max-width: 768px) {
-    /* For tablets: */
-    [class*="col-t-"] {
-      width: 100%;
-    }
-  }
+    
 
 @media only screen and (min-width: 600px) {
-    /* per tablet */
-.col-s-1 {width: 8.33%;}
-.col-s-2 {width: 16.66%;}
-.col-s-3 {width: 25%;}
-.col-s-4 {width: 33.33%;}
-.col-s-5 {width: 41.66%;}
-.col-s-6 {width: 50%;}
-.col-s-7 {width: 58.33%;}
-.col-s-8 {width: 66.66%;}
-.col-s-9 {width: 75%;}
-.col-s-10 {width: 83.33%;}
-.col-s-11 {width: 91.66%;}
-.col-s-12 {width: 100%;}
-}
-
-@media only screen and (min-width:786px) {
-    .col-t-1 {width: 8.33%;}
-    .col-t-2 {width: 16.66%;}
-    .col-t-3 {width: 25%;}
-    .col-t-4 {width: 33.33%;}
-    .col-t-5 {width: 41.66%;}
-    .col-t-6 {width: 50%;}
-    .col-t-7 {width: 58.33%;}
-    .col-t-8 {width: 66.66%;}
-    .col-t-9 {width: 75%;}
-    .col-t-10 {width: 83.33%;}
-    .col-t-11 {width: 91.66%;}
-    .col-t-12 {width: 100%;}
-    }
+    div.absolute {float: right;}
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  
+    
+  }
+  @media only screen and (min-width: 788px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
 
 .button {
     border-radius: 4px;
@@ -132,6 +127,7 @@ body{
 
 .button:hover span {
     padding-right: 25px;
+    animation: rotate_effect 5s infinite ease-in-out;
 }
 
 .button:hover span:after {

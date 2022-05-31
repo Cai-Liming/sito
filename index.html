@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="stile.css" rel="stylesheet" type="text/css">
+    <link href="stile.css" rel="stylesheet">
     <script src="script.js"></script>
     <title>Salute e Benessere</title>
 </head>
@@ -14,19 +14,24 @@
     </div>
     
     <div class="row">
-        <div class="col-3 menu">
-            <ul>
-                <li><button onclick="myFunction1('home.html')" class="button"><span>HOME</span></button> </li>
-                <li><button onclick="myFunction1('scopo.html')" class="button"><span>Scopo</span></button> </li>
-                <li><button onclick="myFunction1('scopo.html')" class="button"><span>OBBIETIVI</span></button> </li>
-                <li><button onclick="myFunction1('scopo.html')" class="button"><span>SFIDE</span></button> </li>
-                <li><button onclick="myFunction1('scopo.html')" class="button"><span>Collegamneti</span></button> </li>
-            </ul>
-        </div> 
-    <div class="col-9 col-s-9 col-t-9">
-        <iframe id="myframe" src="home.html" name="iframe_a" height="800px" width="100%"
-    </div>
-
+        <nav class="col-3 menu">
+          
+          
+            <button onclick="buttonfuction1('home.html')" class="button"><span>HOME</span></button>
+            <div class="line"></div>
+            <button onclick="buttonfuction2('scopo.html')"class="button"><span>scopo</span></button>
+            <div class="line"></div>
+            <button onclick="buttonfuction3('obbiettivo.html')"class="button"><span>obbiettivo</span></button>
+            <div class="line"></div>
+            <button onclick="buttonfuction4('azioni.html')"class="button"><span>azioni</span></button></li>
+            <div class="line"></div>
+            <button onclick="buttonfuction5('occupa.html')"class="button"><span>chi se ne occupa ?</span></button>
+            <div class="line"></div>
+          
+        </nav>
+      
+        <div class="col-9">
+          <iframe id="myframe" src="home.html" name="iframe_a" height="2000px" width="100%" title="Iframe Example"></iframe>
    
 </body>
 </html>
