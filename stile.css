@@ -6,8 +6,11 @@
     clear: both;
     display: block;
 }
+.scritta{
+    font-size: 200px;
+}
 body{
-    background-color: #eee;
+    background-color: #eeeeee;
     /*
     background-image: url("benessere-e-salute-e.jpg") ;
     background-repeat: no-repeat;
@@ -101,9 +104,9 @@ body{
     border:none;
     color: #ffffff;
     text-align: center;
-    font-size: 16px;
+    font-size: 28px;
     padding: 20px;
-    width: 150px;
+    width: 200px;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
@@ -141,3 +144,6 @@ img {
   width: 100%;
   height: auto;
 }
+html {
+    font-family: "Lucida Sans", sans-serif;
+  }
